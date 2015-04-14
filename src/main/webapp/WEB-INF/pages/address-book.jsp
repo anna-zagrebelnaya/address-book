@@ -11,6 +11,7 @@
     <title>Address-book</title>
 </head>
 <body>
-    Place for address-book
+    <h1>Address-book</h1>
+    <h3>User : ${user}</h3>
 </body>
 </html>

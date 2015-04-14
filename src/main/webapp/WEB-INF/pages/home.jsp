@@ -8,17 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Address-book</title>
+    <title>Home</title>
 </head>
 <body>
-    <form action="AddressBookServlet">
-        Please log in<br>
+    <form action="login">
         <input type="text" name="user">
-        <input type="submit" value="Log in">
-    </form>
-
-    <form action="HelloServlet">
-        <input type="submit" value="Get Hello bean">
+        <input type="submit" value="Sign in">
     </form>
 </body>
 </html>
