@@ -1,4 +1,4 @@
 name: Christmas Recipes
-markdown: redcarpet
+markdown: kramdown
 baseurl: /address-book
 highlighter: rouge
