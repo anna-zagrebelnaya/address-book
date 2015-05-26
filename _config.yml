@@ -1,3 +1,6 @@
-name: Christmas Recipes
+name: Address book
 markdown: redcarpet
+highlighter: null
 baseurl: /address-book
+
+permalink: date
