@@ -1,16 +1,26 @@
+<!DOCTYPE html>
+<html>
+
 {% include head.html %}
 
-	<main>
+<body>
 
-    	<h1>{{ page.title }}</h1>
+{% include header.html %}
 
-    	{{ content }}
+<div class="page-content">
+	<div class="wrapper">
+		<h1>{{ page.title }}</h1>
 
-    	<p>Address: {{ page.address }}</p>
-    	<p>Phone: {{ page.phone }}</p>
-    	<p>E-mail: <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+		{{ content }}
 
-	</main>
-	{% include nav.html %}
+		<p>Address: {{ page.address }}</p>
+		<p>Phone: {{ page.phone }}</p>
+		<p>E-mail: <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+	</div>
+</div>
 
-{% include foot.html %}
+{% include footer.html %}
+
+</body>
+
+</html>
