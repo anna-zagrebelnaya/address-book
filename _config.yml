@@ -1,20 +1,13 @@
 # Site settings
-title: Training project
+title: Training project "Address-book"
 email: annzagrebelnaya@gmail.com
 description: >
   This mini-project called "Address-book" is created
   for training purposes to demonstrate possibilities
   that different Java technologies (Spring, Hibernate)
   give.
-baseurl: "/address-book" # the subpath of your site, e.g. /blog/
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
+baseurl: "/address-book"
 github_username:  anna-zagrebelnaya
 
 # Build settings
 markdown: kramdown
-
-
-name: Address book
-
-permalink: date
