@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Address-book
+title: Contacts
 ---
 
 <div class="home">
