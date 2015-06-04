@@ -1,41 +1,12 @@
 ---
 layout: post
-title:  "Description of Spring and Hibernate configuration. Part 1. Spring."
+title:  "Description of Spring MVC configuration."
 date:   2015-06-04 14:48:35
 categories: blog
 alias: [/blog/blogging-on-redirects]
 excerpt_separator: <!--more-->
 
 ---
-
-So, let's look how Spring is set up.
-
-Spring is a container-based framework, so we need to configure it to define what beans it should contain and how to
-wire those beans so that they can work together. Traditionally, Spring configuration is defined in one or more XML
-files, also called context files. Here we have one named as "applicationContext.xml". Further we will discuss its
-content, but now it is enough to know, that it wires some beans, needed for Hibernate.
-
-To integrate Spring into web-application need to declare the `ContextLoaderListener` in `web.xml` and use a
-`contextConfigLocation` to set which context files to load:
-
-{% highlight xml %}
-
-<context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>
-        /WEB-INF/applicationContext.xml
-    </param-value>
-</context-param>
-
-...
-
-<listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-</listener>
-
-{% endhighlight %}
-
-#? Rename SpringBeans.xml to applicationContext.xml
 
 Now let's configure Spring MVC.
 
@@ -90,3 +61,23 @@ folder at the root of the application.
 
 Therefore, all of our images, stylesheets, JavaScript, and other static content needs to be kept in the application’s
 `/resources` folder.
+
+Next we have to define the view resolver in `mvc-dispatcher-servlet.xml`:
+
+{% highlight xml %}
+
+<bean
+    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix">
+        <value>/WEB-INF/pages/</value>
+    </property>
+    <property name="suffix">
+        <value>.jsp</value>
+    </property>
+</bean>
+
+{% endhighlight %}
+
+When `DispatcherServlet` asks `InternalResourceViewResolver` to resolve a view, it
+takes the logical view name, prefixes it with `/WEB-INF/pages/` and suffixes it with `.jsp`.
+The result is the path of a JSP that will render the output.
