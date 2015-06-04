@@ -11,7 +11,7 @@ title: Contacts
     {% for page in site.pages %}
         {% if page.contact %}
           <li>
-            <span class="page-meta">{{ page.phone }}</span>
+            <span class="page-meta">phone: {{ page.phone }}</span>
 
             <h2>
               <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.contact }}</a>
