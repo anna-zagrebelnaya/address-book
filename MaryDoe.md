@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Mary Doe
+contact: Mary Doe
 address: New York
 phone: 456
 email: marydoe@gmail.com
