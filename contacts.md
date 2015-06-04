@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Contacts
+permalink: /contacts/
+
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Contacts</h1>
 
   <ul class="contact-list">
     {% for page in site.pages %}

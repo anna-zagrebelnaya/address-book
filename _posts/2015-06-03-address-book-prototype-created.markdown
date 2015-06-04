@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Address-book prototype created!"
-date:   2015-05-06 23:48:01
+date:   2015-06-03 23:48:01
 categories: blog
 alias: [/blog/blogging-on-redirects]
 excerpt_separator: <!--more-->
@@ -9,10 +9,11 @@ excerpt_separator: <!--more-->
 ---
 
 Now we have some skeleton of Spring+Hibernate web-application, that consists of `domain`, `dao`,
-`service` layers. There are very nice lections in russian about what are the main layers and what each of them for
-[here] [TPPS].
+`service` layers. There are very nice lections in russian about what are the main layers of nontrivial web-application
+and what each of them for [here] [TPPS].
 
 As for Spring, `mvc-dispatcher-servlet.xml` and `SpringBeans.xml` were created.
+
 As for Hibernate, `persistence-mysql.properties` was created and sessionFactory and datasource were registered in
 `SpringBeans.xml`:
 
@@ -42,6 +43,6 @@ As for Hibernate, `persistence-mysql.properties` was created and sessionFactory 
 </bean>
 {% endhighlight %}
 
-The contents and appointment of these files will be discussed in next post.
+The contents and appointment of these files will be discussed in further posts.
 
 [TPPS]:         https://www.youtube.com/playlist?list=PLCA5CB42F5A816A17
