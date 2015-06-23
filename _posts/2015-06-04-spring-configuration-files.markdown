@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Description of Spring configuration."
-date:   2015-06-04 14:48:35
+title:  "Description of Spring configuration"
+date:   2015-06-04 14:00:00
 categories: blog
 alias: [/blog/blogging-on-redirects]
 excerpt_separator: <!--more-->
