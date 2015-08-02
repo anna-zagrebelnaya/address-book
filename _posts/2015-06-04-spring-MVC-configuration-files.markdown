@@ -5,6 +5,7 @@ date:   2015-06-04 14:48:35
 categories: blog
 alias: [/blog/blogging-on-redirects]
 excerpt_separator: <!--more-->
+comments: True
 
 ---
 
