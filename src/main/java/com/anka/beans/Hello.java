@@ -3,9 +3,6 @@ package com.anka.beans;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Created by Anka on 06.04.2015.
- */
 public class Hello {
     private String text;
 
