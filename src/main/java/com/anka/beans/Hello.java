@@ -7,7 +7,7 @@ public class Hello {
     private String text;
 
     public static String getHello() {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("SpringBeans.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         Hello hello = (Hello) ctx.getBean("helloBean");
         return hello.getText();
